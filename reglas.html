@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reglas de Vigía</title><style>:root{--bg:#fff;--fg:#1c1c1e;--mut:#6b7280;--line:#e5e7eb;--acc:#0f766e}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1317;--fg:#e8e8ea;--mut:#9ca3af;--line:#2a2f36;--acc:#5eead4}}
+body{background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,sans-serif;margin:0;padding:16px}
+main{max-width:760px;margin-inline:auto}a{color:var(--acc)}h1,h2{line-height:1.25}
+blockquote{margin:1rem 0;padding:.5rem 1rem;border-left:4px solid var(--acc);color:var(--mut)}
+code{word-break:break-all}img.logo{width:96px;height:96px;border-radius:50%}.mut{color:var(--mut);font-size:.9rem}
+hr{border:0;border-top:1px solid var(--line)}</style></head><body><main>
+<p><a href="./">← Vigía</a></p>
+<h1>Reglas de Vigía (VIGIA)</h1>
+<p><em>Publicadas antes del lanzamiento. Estas reglas fijan por adelantado qué puede y qué no puede pasar con el token. Su huella (SHA-256) se anota en el historial verificable del radar para que no puedan reescribirse en silencio.</em></p>
+<blockquote>
+<p><strong>Versión 1 · publicada antes del lanzamiento.</strong> Los campos marcados <strong>[por publicar]</strong> se completarán después del lanzamiento sin cambiar ninguna de estas reglas.</p>
+</blockquote>
+<h2>1. Qué es</h2>
+<p>Vigía es un <strong>experimento abierto</strong>: observa hasta dónde llegan la psicología y el entusiasmo de un mercado cuando las reglas son públicas y comprobables. Lo crea <strong>una sola persona</strong>. No hay preventa, ni hoja de ruta de precio, ni promesas.</p>
+<p><strong>Uso de inteligencia artificial.</strong> El proyecto (el radar, el filtro, el historial verificable y el laboratorio que crea y comprueba el token) se ha construido y probado con ayuda de herramientas de IA (un asistente de programación). Las decisiones, y la responsabilidad sobre ellas, son de la persona que lo crea. El radar <strong>no usa ningún modelo de IA para generar sus alertas</strong>: las produce un filtro de reglas fijas y públicas, el mismo en cada ejecución. Ninguna IA custodia claves ni mueve fondos.</p>
+<p>Puede perder todo su valor. <strong>No es una inversión</strong>, no promete rendimiento ni revalorización y no da derecho a beneficios ni a comisiones. Nada de lo que sigue es asesoramiento financiero ni legal.</p>
+<h2>2. Lo que ya es cierto desde el primer día (comprobable en la cadena)</h2>
+<ul>
+<li>Suministro fijo de <strong>900.000.000</strong>. La autoridad de emisión está <strong>cerrada</strong>: nunca habrá más.</li>
+<li>La autoridad de congelación está <strong>cerrada</strong>: nadie puede bloquear cuentas.</li>
+<li>Metadatos <strong>inmutables</strong>.</li>
+<li><strong>5 % para el creador (45.000.000)</strong>, bloqueado con desbloqueo lineal diario durante <strong>12 meses</strong> y calendario público, en un contrato que <strong>nadie puede cancelar, pausar, ampliar, transferir ni acelerar</strong> (comprobable leyéndolo de la cadena). Mientras no se cumplan los criterios de la sección 4, el creador <strong>no vende</strong> lo que vaya desbloqueando.</li>
+<li>Un token con estas características se puede comprobar con cualquier explorador o con el escáner del propio proyecto.</li>
+</ul>
+<h2>3. Lo que NO se hará nunca</h2>
+<ul>
+<li>Recomprar tokens con los ingresos del proyecto.</li>
+<li>Repartir ingresos o beneficios entre quienes tengan el token.</li>
+<li>Prometer o insinuar precios, rendimientos o &quot;lo que viene&quot;.</li>
+<li>Fabricar volumen o titulares (monederos propios, compras cruzadas).</li>
+<li>Emitir más tokens ni cambiar los metadatos.</li>
+</ul>
+<h2>4. Criterios de tracción (los tres a la vez)</h2>
+<p>Solo si se cumplen <strong>los tres</strong>, se activa lo de la sección 5:</p>
+<ol>
+<li><strong>Liquidez de unos 40.000 $ mantenida durante 30 días seguidos</strong> en el pool principal (el mismo listón del 🟢 del filtro del proyecto).</li>
+<li><strong>Más de 150 titulares reales</strong>, medidos con un explorador o con RugCheck, sin contar el pool ni las direcciones del creador.</li>
+<li><strong>Al menos 60 días de historial verificable</strong> del radar Vigía con resultados medidos de cada aviso, incluidos los fallos.</li>
+</ol>
+<p>Se comprueban con datos públicos y los resultados se publican. No se pueden cambiar después de lanzar.</p>
+<h2>5. Qué podría activarse, en este orden</h2>
+<ol>
+<li><strong>Acceso por mantener, fijado en VALOR y no en cantidad.</strong> El acceso al radar en tiempo real exige tener tokens por un valor de <strong>10 $</strong> (nivel básico). Así, si el precio sube, hacen falta <strong>menos</strong> tokens, y el acceso no se encarece para quien llega después. El acceso se comprueba por saldo; no se gastan los tokens.<ul>
+<li><strong>Cómo se calcula.</strong> Tokens necesarios = valor objetivo ÷ precio de referencia, redondeado hacia arriba. El precio de referencia es la <strong>mediana de los últimos 7 precios diarios</strong>, para que un pico de un solo día (o una manipulación) no lo mueva. Si no hay datos fiables, <strong>se mantiene el requisito anterior</strong>.</li>
+<li><strong>Se recalcula una vez por semana</strong> y solo cambia si la referencia se mueve un 10 % o más, para que el acceso no parpadee por ruido.</li>
+<li><strong>Suelo y tope.</strong> Nunca menos de 1.000 tokens ni más del 0,05 % del suministro (450.000), aunque el precio se hunda.</li>
+<li>La fórmula es pública y el requisito vigente se publica cada semana. Quien tenga el acceso lo conserva mientras mantenga el saldo exigido en ese momento.</li>
+</ul>
+</li>
+<li><strong>Quema por uso, también en valor.</strong> Algunas funciones premium (informe completo de un token, etc.) se pagan quemando tokens por un valor fijo en dólares, calculado con la misma regla. Cada quema se publica.</li>
+<li><strong>Liquidez propia.</strong> Una parte de lo que el servicio cobre en USDC se usa para profundizar el pool y se <strong>bloquea</strong>. No es una recompra y no se reparte.</li>
+</ol>
+<p>Si los criterios no se cumplen, <strong>no cambia nada</strong>: el token sigue siendo el experimento que es.</p>
+<h2>6. Conflicto de interés</h2>
+<p>El creador posee el 5 % y controla el producto que daría utilidad al token. Cuanto mejor sea el servicio, más valdría su parte. Por eso: el 5 % está bloqueado y visible, no se vende mientras no se cumplan los criterios, y todo lo anterior queda escrito y verificable.</p>
+<h2>7. Cómo comprobarlo</h2>
+<ul>
+<li>El radar publica su historial de avisos en una cadena de huellas SHA-256 que cualquiera puede recalcular.</li>
+<li>La huella de este documento se anota en ese mismo historial: <strong>[por publicar]</strong>.</li>
+<li>Dirección del token y del bloqueo del creador: <strong>[por publicar tras el lanzamiento]</strong>.</li>
+</ul>
+
+</main></body></html>

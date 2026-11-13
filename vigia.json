@@ -1,0 +1,30 @@
+{
+  "name": "Vigía",
+  "symbol": "VIGIA",
+  "description": "Vigía es un experimento abierto de comunidad espontánea: observa hasta dónde llegan la psicología y el entusiasmo de un mercado cuando las reglas son públicas y comprobables. Lo crea una sola persona con ayuda de herramientas de inteligencia artificial, sin preventa ni hoja de ruta de precio. Suministro fijo de 900.000.000: emisión y congelación cerradas, metadatos inmutables y 5 % del creador con bloqueo público. Detrás hay algo real: el radar Vigía, una herramienta de solo lectura con historial de avisos verificable (sus alertas las genera un filtro de reglas fijas, no un modelo de IA), y unas reglas públicas que fijan de antemano qué podría activarse si el experimento gana tracción (enlace de la ficha). Puede perder todo su valor. No es una inversión, no promete rendimiento ni revalorización, y no da derecho a beneficios ni a comisiones.",
+  "image": "https://ernesmar.github.io/vigia-token/logo.png",
+  "external_url": "https://ernesmar.github.io/vigia-token/reglas.html",
+  "attributes": [
+    {
+      "trait_type": "Suministro",
+      "value": "900000000"
+    },
+    {
+      "trait_type": "Autoridad de emisión",
+      "value": "cerrada"
+    },
+    {
+      "trait_type": "Autoridad de congelación",
+      "value": "cerrada"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "https://ernesmar.github.io/vigia-token/logo.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}
